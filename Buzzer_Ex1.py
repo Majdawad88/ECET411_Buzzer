@@ -1,3 +1,7 @@
+
+# git clone https://github.com/Majdawad88/ECET411_Buzzer.git
+
+
 import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
 from time import sleep	# Import the sleep function from the time module GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BCM) # Use physical pin numbering BUZZER_PIN = 21
