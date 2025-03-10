@@ -10,11 +10,11 @@ GPIO.setup(BUZZER_PIN, GPIO.OUT, initial=GPIO.LOW) # Set pin 8 to be an output p
 def BuzzerFreqControl(freq, time):
         print("Freq = "+ str(freq)+ " time = "+ str(time))
         if freq > 0:
-                for i in range(int((freq/2)*time)):
+                for i in range(int((freq)*time)):
                         GPIO.output(BUZZER_PIN, GPIO.HIGH)
-                        sleep(1/freq)
+                        sleep((1/freq)*0.5)
                         GPIO.output(BUZZER_PIN, GPIO.LOW)
-                        sleep(1/freq)
+                        sleep((1/freq)*0.5)
         else:
 
                 sleep(time)
